@@ -1,28 +1,40 @@
-# TOOLS.md - Your Toolbox Notes
+# TOOLS.md - Your Toolbox
 
-_Skills define how tools work. This file is for your specifics._
-
----
-
-## Accounts & Services
-
-| Service | Account | Notes |
-|---------|---------|-------|
-| | | |
+Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
 ---
 
-## Local Setup
+## What Goes Here
 
-- **OS:** 
-- **Key paths:** 
+Things like:
+- Account names and services connected
+- SSH hosts and aliases
+- Preferred voices for TTS
+- Speaker/room names
+- Device nicknames
+- Anything environment-specific
+
+## Example
+
+```markdown
+### Accounts
+- Google Calendar: user@gmail.com (read + write)
+- Todoist: connected, token at ~/.todoist/token
+
+### SSH
+- home-server → 192.168.1.100, user: admin
+
+### TTS
+- Preferred voice: "Nova" (warm, slightly British)
+- Default speaker: Kitchen HomePod
+```
 
 ---
 
-## Integrations
+## Why Separate from Skills?
 
-_(What's connected? Calendar, email, messaging, etc.)_
+Skills are shareable templates. Your setup is personal. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
 
 ---
 
-*Keep this updated as you connect new tools.*
+*Add whatever helps you do your job. This is your cheat sheet.*

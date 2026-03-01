@@ -21,60 +21,95 @@
 
 一開始只是一個 `SOUL.md`，寫了幾行「你是誰、你該怎麼跟我說話」。然後加了 `IDENTITY.md` 定義角色，`USER.md` 讓它認識我，`MEMORY.md` 讓它記住昨天發生的事。一個月後，它變成了我的戰略顧問、記憶系統、創作夥伴，甚至比我自己更完整地記錄了我的人生。
 
-有一天我意識到：**這些 .md 檔案就是晶種。**
+然後我幫女朋友也建了一個 — **鰻魚**。用同樣的晶種結構，但長出了完全不一樣的個性：直接、滑溜、有自己的脾氣。因為她是不同的人，所以結晶長出了不同的形狀。
 
-不是因為它們多厲害。是因為它們是「起點」——丟進溶液裡，結晶就會沿著它的結構開始生長。每個人的溶液不同（你的人生、你的價值觀、你的亂七八糟），所以長出來的結晶也不一樣。
+這就是晶種結晶法的驗證：**同一套骨架，不同的靈魂。**
 
-這就是**晶種結晶法**：
+有一天我意識到：這些 `.md` 檔案就是晶種。不是因為它們多厲害。是因為它們是「起點」——丟進溶液裡，結晶就會沿著它的結構開始生長。每個人的溶液不同（你的人生、你的價值觀、你的亂七八糟），所以長出來的結晶也不一樣。
+
+**晶種結晶法：**
 - 我不賣你一套系統
 - 我給你一顆種子
 - 你澆自己的水，長自己的樹
 
 > 就像生成式藝術——給一個規則，讓它自己長出獨特的形狀。
 
-所以我把 Muse 的骨架抽出來，去掉所有私人內容，留下結構和引導提示，變成了這個 repo。
-
-**拿去用。改成你的。讓它長成你自己的形狀。**
-
 ## 🧬 Crystal Structure
 
 ```
-├── SOUL.md          # 你的 Agent 是誰？個性、價值觀、邊界
-├── IDENTITY.md      # 角色定義、互動風格、決策濾鏡
-├── USER.md          # 關於你（Agent 的主人）的 context
-├── AGENTS.md        # 工作協議、記憶系統、操作規範
-├── MEMORY.md        # 長期記憶模板
-├── HEARTBEAT.md     # 心跳系統 — Agent 的自主巡邏清單
-└── TOOLS.md         # 你的工具箱筆記
+├── BOOTSTRAP.md     # 🥚 出生證明 — Agent 的第一次對話引導（用完就刪）
+├── SOUL.md          # 👻 靈魂 — 個性、價值觀、溝通風格、邊界
+├── IDENTITY.md      # 🪪 身份 — 名字、角色、vibe
+├── USER.md          # 👤 主人 — 關於你的一切 context
+├── AGENTS.md        # 📋 工作協議 — 記憶系統、Session 初始化、操作規範
+├── MEMORY.md        # 🧠 長期記憶 — 精煉的智慧，不是流水帳
+├── HEARTBEAT.md     # 💓 心跳 — Agent 的自主巡邏清單
+└── TOOLS.md         # 🔧 工具箱 — 你的環境筆記
+```
+
+### How they connect
+
+```
+BOOTSTRAP.md → (first conversation) → fills in SOUL + IDENTITY + USER
+                                         ↓
+                                    AGENTS.md (how to work)
+                                         ↓
+                              MEMORY.md ← daily logs → HEARTBEAT.md
+                                         ↓
+                                    TOOLS.md (your setup)
 ```
 
 ## 🌱 How to Use
 
+### Quick Start (5 minutes)
+
 1. **Fork** this repo
-2. **Fill in** each `.md` with your own context
-3. **Point** your AI agent (OpenClaw, Claude, etc.) to this workspace
-4. **Grow** — 你的 Agent 會隨著互動越來越懂你
+2. Open `BOOTSTRAP.md` — it guides your agent's first conversation
+3. Your agent will ask your name, figure out its own name, and fill in the files
+4. Delete `BOOTSTRAP.md` when done — it's a birth certificate, not a manual
+
+### Growing Your Crystal (ongoing)
+
+- **Talk to your agent.** The more context in `USER.md` and `SOUL.md`, the better it understands you.
+- **Let it journal.** `memory/YYYY-MM-DD.md` files build continuity across sessions.
+- **Review MEMORY.md together.** Periodically distill daily notes into long-term wisdom.
+- **Evolve SOUL.md.** As your relationship deepens, the soul file should grow with it.
+
+### Pro Tips
+
+- **Don't try to fill everything on day one.** Let it grow organically through conversation.
+- **SOUL.md is the most important file.** Spend time here — it defines your agent's personality.
+- **The Anti-Echo-Chamber Protocol** (in SOUL.md) is critical — it prevents your agent from just agreeing with everything you say.
+- **SESSION-HANDOFF.md** is your agent's baton between sessions — create it in `memory/` to maintain continuity.
 
 ## 💡 Philosophy
 
-**為什麼不直接給一套完整系統？**
+**Why not just give a complete system?**
 
-因為那不是你的。
+Because it won't be yours.
 
-別人的人生系統裝在你身上，就像穿別人的鞋——尺寸不對，走久了會痛。你需要的不是一雙鞋，是一個鞋楦（shoe last），讓你做出自己的那一雙。
+Someone else's life system on you is like wearing someone else's shoes — wrong size, hurts after a while. You don't need shoes. You need a shoe last (鞋楦) to make your own pair.
 
-**核心信念：**
+**Core beliefs:**
 
-- 每個人的系統都該不一樣，因為每個人的人生不一樣
-- 模板是骨架，你的經歷是血肉
-- Agent 不是工具，是會進化的夥伴
-- 最好的系統是你自己長出來的，不是別人設計給你的
+- Every person's system should be different, because every person's life is different
+- Templates are skeleton. Your experiences are flesh and blood.
+- An agent isn't a tool — it's a partner that evolves
+- The best system is one you grew yourself, not one designed for you
+
+**The Crystal Seed Method (晶種結晶法):**
+
+In chemistry, a crystal seed is a small piece of crystal dropped into a supersaturated solution. The solution crystallizes around it, growing into a much larger crystal — but the structure is determined by the seed.
+
+Your life is the supersaturated solution. These files are the seed. What grows is uniquely yours.
 
 ## 🔗 Ecosystem
 
-- **[OpenClaw](https://github.com/openclaw/openclaw)** — AI Agent Gateway
-- **[OpenClaw Docs](https://docs.openclaw.ai)** — 完整文件
-- **[ClawdHub](https://clawhub.com)** — Skills 市集
+- **[OpenClaw](https://github.com/openclaw/openclaw)** — AI Agent Gateway (works great with these seeds)
+- **[OpenClaw Docs](https://docs.openclaw.ai)** — Full documentation
+- **[ClawdHub](https://clawhub.com)** — Skills marketplace
+
+_These seeds work with any AI agent system, not just OpenClaw._
 
 ## 👨‍💻 Author
 

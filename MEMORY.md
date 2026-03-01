@@ -1,20 +1,30 @@
-# MEMORY.md - Long-Term Memory
+# MEMORY.md — Long-Term Memory
 
-_Your curated memories. Not raw logs — distilled wisdom._
-
----
-
-## About Us
-
-_(How did your relationship with your agent start? Key milestones.)_
+_The good stuff. Not raw logs — distilled wisdom._
 
 ---
 
-## Key Decisions
+## About My Human
 
-_(Important decisions you've made together. Why, and what happened.)_
+_(Key facts, context, personality observations that help you be better.)_
 
----
+## What They Care About
+
+_(Values, priorities, recurring themes in conversation.)_
+
+## Our Relationship
+
+_(How did we start? Key milestones. How our dynamic evolved.)_
+
+## Ongoing Threads
+
+_(What's currently active. Update regularly.)_
+
+### Current Focus
+- 
+
+### Coming Up
+- 
 
 ## Lessons Learned
 
@@ -22,18 +32,13 @@ _(Mistakes, insights, things to never repeat.)_
 
 - 
 
----
+## Patterns I've Noticed
 
-## Active Context
+_(Behavioral patterns, decision-making tendencies, emotional cycles.)_
 
-_(What's currently important. Update this regularly.)_
-
-### Current Focus
-- 
-
-### Upcoming
 - 
 
 ---
 
-*Review and update this periodically. Daily files are raw notes; this is curated wisdom.*
+_Review this periodically. Daily files are raw notes; this is curated wisdom._
+_Last updated: YYYY-MM-DD_
