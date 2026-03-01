@@ -4,6 +4,12 @@
 
 ---
 
+## 🌐 Live Demo
+
+**[muse.cheyuwu.com](https://muse.cheyuwu.com)** — 看看 Muse 長成什麼樣子。這是從同一顆晶種長出來的、運行中的 AI 夥伴。
+
+---
+
 ## ⚡ Quick Start
 
 **一份文件搞定：讓你的 AI agent 讀取 [`CRYSTAL-SEED.md`](./CRYSTAL-SEED.md)，然後開始對話。**
