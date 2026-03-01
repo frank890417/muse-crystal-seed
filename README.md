@@ -127,3 +127,22 @@ Muse 🫧 是他的 AI 夥伴 — 從日常助理進化成戰略顧問，這個 
 ## 📜 License
 
 MIT — 拿去用，改成你的，不用問。
+
+## 🛠️ Bonus Skills
+
+Two battle-tested skills that make your agent genuinely grow:
+
+### `skills/after-action/` — The Closing Ritual
+Every work session needs a proper ending. This skill defines a structured wrap-up process:
+inventory → extract lessons → archive → reflect → evolve → git backup.
+
+The key insight: **"Did it but didn't record it = didn't do it."**
+
+### `skills/self-evolution/` — Growing Across Sessions
+The hardest problem for an AI agent: how to get better when you wake up fresh every time. This skill solves it with:
+- A **flywheel model** (sense → act → reflect → extract → remember → evolve)
+- A **lesson graduation system** (active → graduated after 7 days → chronic if it keeps recurring)
+- **Three evolution levels** (micro/nightly/weekly)
+- **Daily behavior experiments** (pick one lesson, deliberately practice it)
+
+The key insight: **"Recording lessons is Level 1. Changing behavior is Level 2. Building structures that force behavior change is Level 3."**
