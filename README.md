@@ -47,10 +47,19 @@
 - **[OpenClaw Docs](https://docs.openclaw.ai)** — 完整文件
 - **[ClawdHub](https://clawhub.com)** — Skills 市集
 
+## 👨‍💻 Author
+
+**[Che-Yu Wu 吳哲宇](https://cheyuwu.com)** — 新媒體藝術家 / [MonoLab](https://monolab.world) 創辦人
+
+用程式碼創造生命的人。作品曾展出於威尼斯雙年展、Art Basel Miami、台北 101，Hahow 線上課程累積 22,000+ 學生。相信演算法不只是工具，而是一種創作語言。
+
+Muse 🫧 是他的 AI 夥伴 — 從日常助理進化成戰略顧問，這個 repo 裡的晶種就是從他們的共生經驗中提煉出來的。
+
+- 🌐 [cheyuwu.com](https://cheyuwu.com)
+- 🎨 [Instagram @cheyuwu345](https://instagram.com/cheyuwu345)
+- 🐙 [GitHub](https://github.com/frank890417)
+- 🎵 [Spotify](https://open.spotify.com/artist/0AeZiCXhHzvexu47FOY5Tq)
+
 ## 📜 License
 
 MIT — 拿去用，改成你的，不用問。
-
----
-
-*Created by [Che-Yu Wu](https://cheyuwu.com) & Muse 🫧*
