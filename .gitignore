@@ -1,0 +1,11 @@
+# Private data (don't commit your filled-in versions accidentally)
+*.enc
+*.secret
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
