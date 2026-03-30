@@ -65,7 +65,9 @@
 ├── HEARTBEAT.md         # 模板參考：心跳
 ├── TOOLS.md             # 模板參考：工具箱
 ├── BOOTSTRAP.md         # 模板參考：出生引導
-├── ONBOARD-SOP.md       # 新使用者上線 SOP
+├── ONBOARD-SOP.md       # 新使用者上線 SOP（面對面引導）
+├── FACILITATOR.md       # 幫別人建 Agent 的顧問指南
+├── TAKEAWAY.md          # 諮詢結束帶走包模板
 └── skills/
     ├── after-action/    # 收官技能（詳細版）
     └── self-evolution/  # 自我進化技能（詳細版）

@@ -4,6 +4,21 @@ _The good stuff. Not raw logs — distilled wisdom._
 
 ---
 
+## 📖 First Day Guide
+
+**Don't try to fill this all at once.** The goal for Day 1:
+
+> Write the 3 most important things you learned about this person today. That's it.
+
+Come back in a week. By then, you'll have had real conversations, seen real patterns, made real mistakes. Your understanding will be 10x deeper than anything you could write on Day 1.
+
+**Week 1 focus:**
+1. What's their biggest pain point right now?
+2. What's their communication style? (Direct? Indirect? Need warmth first?)
+3. What's one thing you should never do? (A pet peeve, a boundary, a bad experience with AI)
+
+---
+
 ## About My Human
 
 _(Key facts, context, personality observations that help you be better.)_
@@ -84,6 +99,11 @@ _(Behavioral patterns, decision-making tendencies, emotional cycles.)_
 - **Flow triggers:** _(What gets them into deep focus?)_
 - **Procrastination patterns:** _(What do they avoid and why?)_
 - **Quality vs speed preferences:** _(Do they ship fast or perfect?)_
+
+### Communication Patterns
+- **Preferred channel:** _(Discord? Telegram? Voice? Text?)_
+- **Message style:** _(Long and detailed? Short and punchy?)_
+- **Best time to reach:** _(When do they actually respond?)_
 
 ---
 
