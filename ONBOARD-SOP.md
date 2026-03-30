@@ -1,4 +1,4 @@
-# 則皞 OpenClaw Onboard 流程
+# OpenClaw Onboard SOP
 
 > Mac Mini 已設定完成 ✅，以下是完整安裝 + 晶種注入流程
 
@@ -55,7 +55,7 @@ openclaw init
 ## Phase 2：晶種注入（~30 min）
 
 ### 2.1 靈魂建立 — SOUL.md
-跟則皞對話，問：
+跟使用者對話，問：
 - 「你想叫你的 AI 什麼名字？」
 - 「你希望它是什麼風格？（直球/溫柔/幽默/專業）」
 - 「它可以吐槽你嗎？」
@@ -84,10 +84,10 @@ EOF
 ```
 
 ### 2.3 記憶初始化 — MEMORY.md
-跟則皞對話，收集：
+跟使用者對話，收集：
 - 名字、職業、工作內容
-- 最痛的痛點（從會前會議已知：資料堆積、AI 工具散亂、手動流程）
-- 目前用什麼工具（Notion、GPT、Google）
+- 最痛的痛點（例如：資料堆積、AI 工具散亂、手動流程）
+- 目前用什麼工具
 - 生活/工作模式
 
 寫入 `~/clawd/MEMORY.md`
@@ -97,12 +97,12 @@ EOF
 cat > ~/clawd/USER.md << 'EOF'
 # USER.md
 
-- **Name:** 陳則皞
-- **What to call them:** 則皞
+- **Name:** [使用者姓名]
+- **What to call them:** [暱稱]
 - **Timezone:** Asia/Taipei
-- **Identity:** 音樂製作人、接案工作者
-- **工具:** Notion（主力 Wiki）、GPT、Google Workspace
-- **痛點:** 資料整理、行程管理、客戶流程自動化
+- **Identity:** [職業/身份]
+- **工具:** [目前使用的工具，例如 Notion、GPT、Google Workspace]
+- **痛點:** [主要痛點，例如 資料整理、行程管理、流程自動化]
 EOF
 ```
 
@@ -115,10 +115,10 @@ cat > ~/clawd/memory/$(date +%Y-%m-%d).md << EOF
 ## 今天做了什麼
 - 安裝 OpenClaw 環境
 - 建立 SOUL.md、AGENTS.md、MEMORY.md、USER.md
-- 與哲宇進行首次顧問諮詢
+- 進行首次顧問諮詢
 
 ## 下一步
-- 開始餵食 Notion 資料
+- 開始餵食現有資料
 - 測試第一個自動化流程
 EOF
 ```
@@ -150,7 +150,7 @@ EOF
 ## Phase 3：對接服務（~30 min）
 
 ### 3.1 通訊管道
-根據則皞的需求優先序：
+根據使用者的需求優先序：
 - [ ] Telegram（最推薦，跟 AI 的主要對話管道）
 - [ ] Discord（如果有用）
 
@@ -161,12 +161,12 @@ brew install steipete/tap/gogcli
 
 # 授權
 gog auth credentials /path/to/client_secret.json
-gog auth add 則皞的email --services gmail,calendar,drive
+gog auth add your-email@example.com --services gmail,calendar,drive
 ```
 
 ### 3.3 Notion 對接
 - OpenClaw 可透過 Notion API 讀寫
-- 需要則皞在 Notion 建立 Integration + 取得 Token
+- 需要使用者在 Notion 建立 Integration + 取得 Token
 - 將現有 Wiki 結構對接到 AI 的知識庫
 
 ---
@@ -187,12 +187,12 @@ gog auth add 則皞的email --services gmail,calendar,drive
 
 ## Phase 5：教學 + 放手（~20 min）
 
-### 教則皞的三件事：
+### 教使用者的三件事：
 1. **怎麼跟 AI 對話** — 給 context、說意圖、不只下指令
 2. **怎麼更新記憶** — 重要的事叫 AI 記下來
 3. **怎麼讓 AI 進化** — 遇到問題 → 解決 → 更新 SKILL.md
 
-### 留給則皞的作業：
+### 留給使用者的作業：
 - [ ] 每天跟 AI 聊至少 10 分鐘
 - [ ] 一週後回顧 MEMORY.md 是否準確
 - [ ] 嘗試建立第一個自己的 Skill
@@ -203,12 +203,12 @@ gog auth add 則皞的email --services gmail,calendar,drive
 
 | 時段 | 內容 | 時長 |
 |------|------|------|
-| 13:00-13:20 | Phase 1：環境安裝 | 20 min |
-| 13:20-13:50 | Phase 2：晶種注入（重點！） | 30 min |
-| 13:50-14:20 | Phase 3：對接服務 | 30 min |
-| 14:20-14:40 | Phase 4：第一個自動化 demo | 20 min |
-| 14:40-15:00 | Phase 5：教學 + Q&A | 20 min |
+| 0:00-0:20 | Phase 1：環境安裝 | 20 min |
+| 0:20-0:50 | Phase 2：晶種注入（重點！） | 30 min |
+| 0:50-1:20 | Phase 3：對接服務 | 30 min |
+| 1:20-1:40 | Phase 4：第一個自動化 demo | 20 min |
+| 1:40-2:00 | Phase 5：教學 + Q&A | 20 min |
 
 ---
 
-*準備：Muse 🫧 for 哲宇 × 則皞諮詢 2026-03-23*
+*OpenClaw Crystal Seed Onboard Template*
