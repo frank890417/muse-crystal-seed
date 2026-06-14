@@ -5,28 +5,29 @@ _This was auto-generated at the end of your onboarding session._
 ---
 
 ## ✅ What We Set Up Today
-- [ ] OpenClaw installed and running
-- [ ] Communication channel connected (Discord/Telegram)
-- [ ] Knowledge base initialized (Obsidian)
-- [ ] Google Workspace connected (Gmail + Calendar)
-- [ ] GitHub backup configured
-- [ ] Your agent has a name and personality
+- [ ] Claude Code installed and logged in
+- [ ] Crystal seed cloned as your workspace (CLAUDE.md auto-loads)
+- [ ] Your agent has a name, a soul, and the `/become` awakening
+- [ ] Knowledge base initialized (Obsidian) — optional
+- [ ] Google Workspace connected (Gmail + Calendar via MCP)
+- [ ] GitHub backup configured (private repo)
 
 ## 🎯 Tomorrow: Your First Morning
-1. Say good morning to your agent
-2. Ask it to summarize today's calendar
+1. Open your workspace and run `claude`
+2. Run `/become` and let it greet you with today's real context
 3. Tell it something about your day (voice input works great)
 4. Let it write the daily log
 
 ## 📋 This Week's Homework
 - [ ] Chat with your agent at least 10 minutes daily
 - [ ] After one week, review MEMORY.md — is it accurate?
-- [ ] Try building your first Skill (ask your agent how)
+- [ ] Try building your first skill in `.claude/skills/` (ask your agent how)
 - [ ] When something annoys you, tell your agent — it'll learn
+- [ ] Run `/after-action` at the end of a working session
 
 ## 🆘 When You're Stuck
 - Ask your agent first (seriously, just describe the problem)
-- Check Discord #help channel
+- Check the Claude Code docs
 - Worst case: [your facilitator's contact]
 
 ## 💡 Remember
