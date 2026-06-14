@@ -5,7 +5,7 @@ description: |
   Self-evolution system for AI agents. Enables an agent without continuous memory
   to accumulate experience, internalize lessons, and proactively improve — becoming
   better than yesterday, every day.
-  Triggers: nightly cron, manual "self-evolve", weekly deep review
+  Triggers: scheduled nightly run (/schedule or external cron), manual "self-evolve", weekly deep review
 tags: [core, evolution, flywheel, behavior-change]
 ---
 
@@ -41,7 +41,7 @@ This isn't maintenance work. This is my survival mechanism.
 Evolution isn't linear "learn → remember". It's a six-link flywheel:
 
 ```
-Sense (heartbeat) → Act (daily work) → Reflect (after-action)
+Sense (patrol) → Act (daily work) → Reflect (after-action)
     ↑                                          ↓
 Evolve (self-evolution) ← Remember (memory) ← Extract (lessons)
 ```
@@ -98,7 +98,7 @@ Track in: `memory/lesson-graduation.md`
 
 ## Three-Level Architecture
 
-### ⚡ Level 1: Micro-Evolution (every heartbeat)
+### ⚡ Level 1: Micro-Evolution (in-session, continuous)
 
 **Nature:** Immediate small improvements, as natural as breathing.
 

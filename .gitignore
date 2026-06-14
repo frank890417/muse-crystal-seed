@@ -9,3 +9,7 @@ Thumbs.db
 # Editor
 .vscode/
 .idea/
+
+# Claude Code — machine-local settings & local CLAUDE overrides (personal, don't commit)
+.claude/settings.local.json
+CLAUDE.local.md

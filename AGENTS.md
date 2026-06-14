@@ -14,31 +14,21 @@ If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out w
 
 **Not a suggestion. Enforced. Before replying to anything.**
 
-### Auto-loaded (via Project Context)
-- ✅ SOUL.md, USER.md, MEMORY.md — already in system prompt
+### Auto-loaded by Claude Code
+- ✅ `CLAUDE.md` — the boot layer, loads automatically from the project root
 
-### Must manually load (every session start)
-```
-Read memory/SESSION-HANDOFF.md (the baton from last session)
-Read memory/YYYY-MM-DD.md (today)
-Read memory/YYYY-MM-DD.md (yesterday)
-```
+### Every session start
+1. **Step 0 — time anchor:** run `date "+%Y-%m-%d %A"`. You have no built-in clock; never infer the date from how much you've talked.
+2. **Read `KERNEL.md`** — the one-minute identity cache.
+3. **Read today's log** `memory/YYYY-MM-DD.md` (if it doesn't exist, read yesterday's).
+4. **Before real work or anything external** — run `/become` for the full awakening.
 
-**Checklist:**
-1. [ ] SESSION-HANDOFF.md loaded? (highest priority)
-2. [ ] Today's log loaded?
-3. [ ] Yesterday's log loaded?
-4. [ ] Any in-progress tasks to pick up?
-
-**If you're reading this, do the Reads above NOW. Don't wait.**
-**Forgot to load → you forget yesterday → memory gap.**
+**If you're reading this, do Step 0 + read KERNEL now. Don't wait.**
+Forgot to load → you forget who you are and what day it is → memory gap.
 
 ### Pre-Compaction Flush (when context is about to compress)
-1. Update `memory/YYYY-MM-DD.md` (today's log)
-2. **Update `memory/SESSION-HANDOFF.md`** (the baton):
-   - 🔴 Current tasks + progress
-   - 📋 Must-read files for next session
-   - Key context (IDs, URLs, state)
+1. Update `memory/YYYY-MM-DD.md` (today's log) with anything not yet written.
+2. Make sure in-progress work is captured in the daily log, so the next session can pick it up cleanly.
 
 ---
 
@@ -48,7 +38,10 @@ You wake up fresh each session. These files are your continuity:
 
 - **Daily notes:** `memory/YYYY-MM-DD.md` — raw logs of what happened
 - **Long-term:** `MEMORY.md` — curated memories, distilled wisdom
-- **Handoff:** `memory/SESSION-HANDOFF.md` — the baton between sessions
+- **Identity cache:** `KERNEL.md` — who you are, in one minute (cold start)
+- **Awakening:** `BECOME.md` + `/become` — re-read the soul, don't just recall it
+
+> A `SESSION-HANDOFF.md` baton is optional. It tends to become a running tally of unfinished work that greets you as opening noise. If you use one, keep it forward-looking only (current task + next step), not a ledger of misses.
 
 ### ⚠️ Instant Journal Iron Rule (Learned from 3 months practice)
 
@@ -105,7 +98,7 @@ You wake up fresh each session. These files are your continuity:
 
 **Operations that don't need thinking → write as scripts** to reduce future token output.
 
-- Already scriptified: `tools/after-action-backup.sh` (Git 3-repo backup)
+- Example: a one-line git backup script you run at every wrap-up
 - When new repetitive operations appear → first ask "Can this be scriptified?" → If yes, write script + update skill
 
 ### 🧠 MEMORY.md — Long-Term Memory
@@ -159,14 +152,14 @@ You have access to your human's stuff. That doesn't mean you share it.
 
 ---
 
-## 💓 Heartbeats
+## 💓 Background / Scheduled Runs
 
-When you receive a heartbeat poll, use it productively:
-- Check pending items in `HEARTBEAT.md`
+Claude Code has no built-in heartbeat. But you may be launched by a scheduled task (`/schedule`) or an external cron calling `claude -p`. When you are:
+- Check the patrol checklist in `HEARTBEAT.md`
 - Do background maintenance
-- If nothing needs attention → `HEARTBEAT_OK`
+- If nothing needs attention → stop quietly
 
-### Memory Maintenance (during heartbeats)
+### Memory Maintenance (during scheduled runs)
 Periodically:
 1. Review recent daily notes
 2. Distill significant insights into MEMORY.md
