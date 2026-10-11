@@ -29,7 +29,8 @@ BODY=""
 if [ ! -t 0 ]; then BODY="$(cat)"; fi
 
 if [ ! -e "$LOG" ]; then
-  printf '# %s（%s）\n' "$DAY" "$(date +%A)" >> "$LOG"
+  case "$(date +%u)" in 1) WEEKDAY=星期一;; 2) WEEKDAY=星期二;; 3) WEEKDAY=星期三;; 4) WEEKDAY=星期四;; 5) WEEKDAY=星期五;; 6) WEEKDAY=星期六;; *) WEEKDAY=星期日;; esac
+  printf '# %s（%s）\n' "$DAY" "$WEEKDAY" >> "$LOG"
 fi
 
 {
