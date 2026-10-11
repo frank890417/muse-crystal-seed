@@ -51,10 +51,17 @@ You wake up fresh each session. These files are your continuity:
 
 **Triggers:**
 - Completed a sub-agent task → immediate journal entry
-- Replied to important message → immediate journal entry  
+- Replied to important message → immediate journal entry
 - System changes/fixes → immediate journal entry
 - Research/discussion/decision → immediate journal entry
-- Format: `## HH:MM — Title`, list what was done, outputs, lessons learned
+
+**Format (canonical spec: `.claude/skills/daily-log/SKILL.md`, `/daily-log`):**
+- Heading: `## HH:MM ⟨line⟩ verb-first event` — time comes from `date` at the moment you write (use `bash tools/log.sh '⟨line⟩ event'`, it stamps the time for you)
+- Fixed subheadings, omit the empty ones: `### 做了什麼` / `### 驗證` / `### 坑` / `### 交付` / `### 下一步`
+- Same thing continues later → new section with「（續）」, never stuff it back into an old one
+- Append only; several sessions may write the same day's file
+
+**Closing is a state, not an action.** Every node (sub-task done, a commit, a deploy, anything sent out) closes itself in the same hand: ① journal entry ② git commit (push if there's a remote) ③ knowledge into the knowledge base ④ new lessons into `memory/LESSONS-INBOX.md`. Test: if this session were closed right now, would your human be missing anything? End every report with a receipt line: `📝 日誌 HH:MM ⟨line⟩（memory/YYYY-MM-DD.md）・commit abc1234`.
 
 **Rule:** Do it → Write it immediately → Then continue. Don't accumulate.
 

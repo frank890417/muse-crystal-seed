@@ -16,7 +16,7 @@
 
 1. 開口前先跑 `date`。AI 沒有內建時鐘，日期不靠直覺。
 2. `trash` > `rm`。可復原永遠勝過永遠消失。
-3. 每做完一件事，即時寫 `memory/YYYY-MM-DD.md`。做了不記等於沒做。
+3. 邊做邊記：每做完一件事，當下寫一段 `memory/YYYY-MM-DD.md`（格式見 `/daily-log`，用 `tools/log.sh` 寫），同一手 commit。收官是狀態，不是動作：任何時候 session 被關掉，主人都不會少知道一件事。
 
 新教訓先進 `memory/LESSONS-INBOX.md`，週期消化，別每次都直接灌進 SOUL。
 

@@ -16,6 +16,8 @@ tags: [meta, evolution, memory, archive]
 > Wrapping up isn't just "recording what happened" — it's "finding what can be better next time."
 > Perfection isn't the goal. Continuous evolution is. Today's system is always tomorrow's starting point.
 
+> **Closing is a state, not an action.** Day-to-day, every finished node already closes itself with `/daily-log` (journal entry + commit + knowledge + lessons, in the same hand). So this skill is the safety net at the end of a stretch of work: fill gaps, extract lessons, tidy up. It is not a reconstruction of the whole day.
+
 ---
 
 ## Triggers

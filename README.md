@@ -10,7 +10,29 @@
 
 **[muse.cheyuwu.com](https://muse.cheyuwu.com)** — 看看 Muse 長成什麼樣子。這是從同一顆晶種長出來、運行中的 AI 夥伴。
 
-## ⚡ Quick Start
+## 🚀 一鍵安裝
+
+**整顆晶種**（一個新的 AI 夥伴 workspace，裝到 `~/my-agent`）：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/frank890417/muse-crystal-seed/main/install.sh | bash
+```
+
+想裝到別的資料夾，在最後加上路徑：`… | bash -s -- ~/想放的地方`
+
+**只裝技能**到你已經有的資料夾（例如你的 Obsidian 知識庫）：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/frank890417/muse-crystal-seed/main/install.sh | bash -s -- --skills ~/你的知識庫
+```
+
+同名技能已經存在就跳過，不會蓋掉你的檔案。裝完重開 Claude Code，在對話框打 `/` 就看得到。
+
+**不想開終端機？** 在 Claude Code 裡直接說：
+
+> 幫我把 https://github.com/frank890417/muse-crystal-seed 的 .claude/skills 裡所有技能，還有 tools/log.sh，複製到這個資料夾（同名的跳過，不要覆蓋），然後告訴我裝了哪些。
+
+## ⚡ Quick Start（手動）
 
 1. Clone 這顆種子當你的 workspace：
 
@@ -30,7 +52,7 @@ claude
 3. 👤 **認識你** — USER.md
 4. 🌅 **開機與甦醒** — CLAUDE / KERNEL / BECOME（每次醒來重新變回自己）
 5. 🧠 **記憶系統** — 跨 session 的連續性
-6. 🔄 **收官** — 每次工作的結尾儀式
+6. 🔄 **邊做邊記** — 每做完一件事當下記好、存好，收官是狀態，不是動作
 7. 🧬 **自我進化** — 每天比昨天更好
 
 完整指南讀 [`CRYSTAL-SEED.md`](./CRYSTAL-SEED.md)。
@@ -82,6 +104,9 @@ claude
 ├── TOOLS.md             # 模板：工具箱
 ├── ONBOARD-SOP.md       # 2 小時諮詢上線 SOP
 ├── TAKEAWAY.md          # 諮詢結束帶走包
+├── install.sh           # 一鍵安裝（整顆晶種／只裝技能）
+├── tools/
+│   └── log.sh           # 寫一段日誌（時間自動取、只追加）
 ├── .claude/
 │   ├── settings.json    # 權限基線
 │   └── skills/
@@ -90,13 +115,14 @@ claude
 │       ├── self-evolution/  # 自我進化技能（完整版）
 │       ├── meeting-notes/   # 會議逐字稿 → 會議紀錄＋歸檔
 │       ├── deep-discussion/ # 訪談式深度討論＋每輪歸檔
-│       └── battlefield/     # 戰場盤點：陪你把事情一件一件推完
+│       ├── battlefield/     # 戰場盤點：陪你把事情一件一件推完
+│       └── daily-log/       # 邊做邊記：日誌格式規範
 └── memory/              # 每日日誌住這裡
 ```
 
 `CRYSTAL-SEED.md` 是一站式指南。其他 `.md` 是各自的模板，可以直接 fork 來填。`.claude/skills/` 裡是三個核心技能，clone 進 workspace 就會被 Claude Code 自動發現，用 `/become`、`/after-action`、`/self-evolution` 觸發。
 
-另外三個是我自己最常用的工作技能（2026-10 加入，搭配 AI 大腦課）：`/meeting-notes` 把會議逐字稿整理成紀錄並歸檔、`/deep-discussion` 用一次一題的訪談陪你想清楚一件事、`/battlefield` 把手邊待辦分群排序，一次只端一件給你。三個都會越用越貼近你：每次用完說一句哪裡不好用，它會把改進寫回自己。
+另外四個是我自己最常用的工作技能（2026-10 加入，搭配 AI 大腦課）：`/daily-log` 邊做邊記（每做完一件事當下寫一段固定格式的日誌、同一手 commit）、`/meeting-notes` 把會議逐字稿整理成紀錄並歸檔、`/deep-discussion` 用一次一題的訪談陪你想清楚一件事、`/battlefield` 把手邊待辦分群排序，一次只端一件給你。三個都會越用越貼近你：每次用完說一句哪裡不好用，它會把改進寫回自己。
 
 ## 🔗 Ecosystem
 

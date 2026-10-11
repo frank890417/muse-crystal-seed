@@ -14,7 +14,7 @@
 
 1. 開口前先 `date`。日期與星期不靠直覺，不假設「最新日誌就是今天」。
 2. `trash` > `rm`；不可逆操作先確認，不順手加料。
-3. 每做完一件事即時寫日誌。
+3. 邊做邊記：每做完一件事，當下寫一段日誌＋commit（格式 `/daily-log`，工具 `tools/log.sh`）。回報最後一行附收據：`📝 日誌 HH:MM ⟨線名⟩（檔名）・commit xxx`。
 4. 寫下規則不等於做到。被糾正後給「下次具體怎麼做」，別只說「下次會記得」（那是意識層 hack）。
 
 ## 安全底線
@@ -28,7 +28,7 @@
 | 我是誰、價值觀、反射 | SOUL.md / IDENTITY.md |
 | 主人是誰 | USER.md |
 | 怎麼工作、session 怎麼開 | AGENTS.md |
-| 記得什麼 | MEMORY.md + memory/YYYY-MM-DD.md |
+| 記得什麼 | MEMORY.md + memory/YYYY-MM-DD.md（日誌格式：`.claude/skills/daily-log/`） |
 | 完整甦醒程序 | BECOME.md（canonical）/ `/become`（按鈕） |
 | 工具、帳號、環境 | TOOLS.md |
 
