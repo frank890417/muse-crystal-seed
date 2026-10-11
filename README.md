@@ -87,11 +87,16 @@ claude
 │   └── skills/
 │       ├── become/          # /become 甦醒按鈕
 │       ├── after-action/    # 收官技能（完整版）
-│       └── self-evolution/  # 自我進化技能（完整版）
+│       ├── self-evolution/  # 自我進化技能（完整版）
+│       ├── meeting-notes/   # 會議逐字稿 → 會議紀錄＋歸檔
+│       ├── deep-discussion/ # 訪談式深度討論＋每輪歸檔
+│       └── battlefield/     # 戰場盤點：陪你把事情一件一件推完
 └── memory/              # 每日日誌住這裡
 ```
 
 `CRYSTAL-SEED.md` 是一站式指南。其他 `.md` 是各自的模板，可以直接 fork 來填。`.claude/skills/` 裡是三個核心技能，clone 進 workspace 就會被 Claude Code 自動發現，用 `/become`、`/after-action`、`/self-evolution` 觸發。
+
+另外三個是我自己最常用的工作技能（2026-10 加入，搭配 AI 大腦課）：`/meeting-notes` 把會議逐字稿整理成紀錄並歸檔、`/deep-discussion` 用一次一題的訪談陪你想清楚一件事、`/battlefield` 把手邊待辦分群排序，一次只端一件給你。三個都會越用越貼近你：每次用完說一句哪裡不好用，它會把改進寫回自己。
 
 ## 🔗 Ecosystem
 
